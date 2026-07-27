@@ -1,3 +1,16 @@
 node_modules/
 .env
 *.log
+
+# ============================================================
+# DATOS PERSONALES — NUNCA subir a este repositorio
+# Este repo es PUBLICO. La lista de suscriptores es dato personal
+# protegido por la Ley 29733. Vive en MailFlow, no aqui.
+# ============================================================
+*.xlsx
+*.xls
+*.csv
+contactos/
+lista*
+*suscriptores*
+*contactos*
