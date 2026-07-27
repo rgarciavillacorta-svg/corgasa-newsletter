@@ -1,0 +1,70 @@
+{
+  "_lee_esto_primero": "Este archivo decide que pack se destaca cada mes en el bloque 5 del newsletter. Puedes editarlo tu mismo: cambia solo lo que esta entre comillas. No borres las llaves ni las comas.",
+
+  "packs_disponibles": {
+    "HIGH-RISK": {
+      "nombre": "Pack HIGH-RISK",
+      "descripcion": "Elige 3 cursos de Trabajos de Alto Riesgo por el precio de uno.",
+      "precio_original": "S/ 450.00",
+      "precio_oferta": "S/ 149.90",
+      "url": "https://corgasa.pe/producto/pack-trabajos-de-alto-riesgo-3-cursos-precio-de-uno/"
+    },
+    "SSOMA": {
+      "nombre": "Pack SSOMA",
+      "descripcion": "Seguridad, salud ocupacional y medio ambiente en un solo paquete.",
+      "precio_original": "S/ 850.00",
+      "precio_oferta": "S/ 299.00",
+      "url": "https://corgasa.pe/producto/pack-ssoma-cursos-seguridad-salud-ocupacional-medio-ambiente/"
+    },
+    "TRINORMA": {
+      "nombre": "Pack TRINORMA",
+      "descripcion": "ISO 9001, ISO 14001 e ISO 45001. Ideal antes de una auditoria.",
+      "precio_original": "S/ 800.00",
+      "precio_oferta": "S/ 169.00",
+      "url": "https://corgasa.pe/producto/pack-trinorma-cursos-iso-9001-14001-45001/"
+    },
+    "FIRST-AID": {
+      "nombre": "Pack FIRST-AID",
+      "descripcion": "Primeros auxilios y respuesta ante emergencias.",
+      "precio_original": "S/ 450.00",
+      "precio_oferta": "S/ 149.90",
+      "url": "https://corgasa.pe/producto/pack-first-aid-cursos-seguridad-emergencias/"
+    },
+    "WELLNESS": {
+      "nombre": "Pack WELLNESS",
+      "descripcion": "Ergonomia laboral, seguridad basada en el comportamiento y liderazgo SST.",
+      "precio_original": "S/ 800.00",
+      "precio_oferta": "S/ 149.90",
+      "url": "https://corgasa.pe/producto/pack-wellness-cursos-ergonomia-sbc-liderazgo-sst/"
+    },
+    "MEMBERS": {
+      "nombre": "CORGASA MEMBERS",
+      "descripcion": "Membresia con acceso a paquetes completos de cursos industriales.",
+      "precio_original": "S/ 1,200.00",
+      "precio_oferta": "S/ 600.00",
+      "url": "https://corgasa.pe/producto/membresia-corgasa-members-cursos-industriales-online/"
+    }
+  },
+
+  "calendario": [
+    { "mes": 1,  "nombre_mes": "Enero",      "ancla": "SSOMA",     "secundarias": ["HIGH-RISK", "TRINORMA"], "gancho": "Planificacion anual del programa de capacitacion" },
+    { "mes": 2,  "nombre_mes": "Febrero",    "ancla": "HIGH-RISK", "secundarias": ["SSOMA", "FIRST-AID"],    "gancho": "Arranque de temporada de obra" },
+    { "mes": 3,  "nombre_mes": "Marzo",      "ancla": "MEMBERS",   "secundarias": ["SSOMA", "TRINORMA"],     "gancho": "Mes de la seguridad y renovacion de certificados" },
+    { "mes": 4,  "nombre_mes": "Abril",      "ancla": "TRINORMA",  "secundarias": ["SSOMA", "WELLNESS"],     "gancho": "Auditorias ISO del primer semestre" },
+    { "mes": 5,  "nombre_mes": "Mayo",       "ancla": "FIRST-AID", "secundarias": ["HIGH-RISK", "WELLNESS"], "gancho": "Dia del Trabajo y brigadas de emergencia" },
+    { "mes": 6,  "nombre_mes": "Junio",      "ancla": "MEMBERS",   "secundarias": ["SSOMA", "HIGH-RISK"],    "gancho": "Cierre del primer semestre" },
+    { "mes": 7,  "nombre_mes": "Julio",      "ancla": "WELLNESS",  "secundarias": ["SSOMA", "FIRST-AID"],    "gancho": "Fiestas Patrias y clima laboral" },
+    { "mes": 8,  "nombre_mes": "Agosto",     "ancla": "HIGH-RISK", "secundarias": ["SSOMA", "TRINORMA"],     "gancho": "Reinicio de proyectos del segundo semestre" },
+    { "mes": 9,  "nombre_mes": "Septiembre", "ancla": "HIGH-RISK", "secundarias": ["FIRST-AID", "SSOMA"],    "gancho": "Temporada alta de fiscalizacion SUNAFIL" },
+    { "mes": 10, "nombre_mes": "Octubre",    "ancla": "SSOMA",     "secundarias": ["TRINORMA", "WELLNESS"],  "gancho": "Cierre de metas anuales de capacitacion" },
+    { "mes": 11, "nombre_mes": "Noviembre",  "ancla": "MEMBERS",   "secundarias": ["SSOMA", "HIGH-RISK"],    "gancho": "Presupuesto del ano siguiente" },
+    { "mes": 12, "nombre_mes": "Diciembre",  "ancla": "MEMBERS",   "secundarias": ["TRINORMA", "WELLNESS"],  "gancho": "Uso de saldo presupuestal y propositos de ano nuevo" }
+  ],
+
+  "precios_por_volumen": {
+    "_nota": "Bloque 7 del newsletter. Fuente: catalogo_cursos.md v3.0",
+    "3_a_9": "S/ 80.00",
+    "10_a_19": "S/ 60.00",
+    "20_a_mas": "S/ 40.00"
+  }
+}

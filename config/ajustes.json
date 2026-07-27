@@ -1,0 +1,50 @@
+{
+  "_lee_esto_primero": "Ajustes generales del envio. Si cambias algo aqui, afecta a todas las ediciones futuras.",
+
+  "remitente": {
+    "nombre": "CORGASA",
+    "correo": "comercial@corgasa.pe",
+    "_pendiente": "Ruben debe decidir si conviene separar en boletin@corgasa.pe para proteger la reputacion del correo comercial"
+  },
+
+  "programacion": {
+    "dia_generacion": 25,
+    "dia_envio": 1,
+    "hora_peru": "08:00",
+    "cron_generacion": "0 13 25 * *",
+    "cron_envio": "0 13 1 * *",
+    "_nota_cron": "13:00 UTC = 08:00 en Peru. El cron NO distingue sabados, domingos ni feriados: si el dia 1 cae domingo, se envia el domingo.",
+    "retrasar_a_dia_habil": false,
+    "_nota_dia_habil": "Si lo pones en true, el envio se corre al primer dia habil. Por defecto false, tal como pidio Ruben."
+  },
+
+  "envio": {
+    "plataforma": "resend",
+    "tamano_tanda": 200,
+    "_nota_tanda": "Enviar por tandas protege la reputacion del dominio. No subir de 200 sin revisar metricas.",
+    "requiere_aprobacion": true,
+    "_nota_aprobacion": "NUNCA cambiar a false. Es el candado que impide que salga un correo sin revisar."
+  },
+
+  "contacto": {
+    "whatsapp": "+51 975 584 117",
+    "whatsapp_url": "https://wa.me/51975584117",
+    "web": "https://corgasa.pe",
+    "aula_virtual": "https://corgasa.pe/usuario/",
+    "validar_certificado": "https://corgasa.pe/validacion-de-certificados/"
+  },
+
+  "marca": {
+    "azul": "#0B3C5D",
+    "naranja": "#E8720C",
+    "amarillo": "#F5A623",
+    "logo": "https://corgasa.pe/wp-content/uploads/2023/06/Logo_CORGASA_2.png",
+    "_pendiente": "Colores deducidos del sitio web. Ruben debe confirmar los codigos oficiales de la marca."
+  },
+
+  "utm": {
+    "source": "newsletter",
+    "medium": "email",
+    "_nota": "El campaign se genera solo con el formato boletin_AAAA_MM"
+  }
+}
