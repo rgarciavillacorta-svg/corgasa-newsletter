@@ -1,0 +1,47 @@
+{
+  "_lee_esto_primero": "Feriados nacionales del Peru. El sistema los usa para NO enviar el boletin en feriado, sabado ni domingo. IMPORTANTE: los feriados se publican por decreto cada ano en El Peruano y pueden cambiar. Revisa y actualiza esta lista cada diciembre.",
+
+  "_ultima_revision": "2026-07-27",
+  "_revisar_antes_de": "2026-12-31",
+  "_fuente": "https://www.gob.pe/feriados",
+
+  "no_enviar_en": {
+    "sabados": true,
+    "domingos": true,
+    "feriados": true
+  },
+
+  "feriados": {
+    "2026": [
+      { "fecha": "2026-07-28", "motivo": "Fiestas Patrias" },
+      { "fecha": "2026-07-29", "motivo": "Fiestas Patrias" },
+      { "fecha": "2026-08-06", "motivo": "Batalla de Junin" },
+      { "fecha": "2026-08-30", "motivo": "Santa Rosa de Lima" },
+      { "fecha": "2026-10-08", "motivo": "Combate de Angamos" },
+      { "fecha": "2026-11-01", "motivo": "Dia de Todos los Santos" },
+      { "fecha": "2026-12-08", "motivo": "Inmaculada Concepcion" },
+      { "fecha": "2026-12-09", "motivo": "Batalla de Ayacucho" },
+      { "fecha": "2026-12-25", "motivo": "Navidad" }
+    ],
+    "2027": [
+      { "fecha": "2027-01-01", "motivo": "Ano Nuevo" },
+      { "fecha": "2027-03-25", "motivo": "Jueves Santo (movil - VERIFICAR)" },
+      { "fecha": "2027-03-26", "motivo": "Viernes Santo (movil - VERIFICAR)" },
+      { "fecha": "2027-05-01", "motivo": "Dia del Trabajo" },
+      { "fecha": "2027-06-07", "motivo": "Batalla de Arica y Dia de la Bandera" },
+      { "fecha": "2027-06-29", "motivo": "San Pedro y San Pablo" },
+      { "fecha": "2027-07-23", "motivo": "Dia de la Fuerza Aerea" },
+      { "fecha": "2027-07-28", "motivo": "Fiestas Patrias" },
+      { "fecha": "2027-07-29", "motivo": "Fiestas Patrias" },
+      { "fecha": "2027-08-06", "motivo": "Batalla de Junin" },
+      { "fecha": "2027-08-30", "motivo": "Santa Rosa de Lima" },
+      { "fecha": "2027-10-08", "motivo": "Combate de Angamos" },
+      { "fecha": "2027-11-01", "motivo": "Dia de Todos los Santos" },
+      { "fecha": "2027-12-08", "motivo": "Inmaculada Concepcion" },
+      { "fecha": "2027-12-09", "motivo": "Batalla de Ayacucho" },
+      { "fecha": "2027-12-25", "motivo": "Navidad" }
+    ]
+  },
+
+  "_nota_verificacion": "Los feriados marcados VERIFICAR son moviles (dependen de la Semana Santa) y deben confirmarse contra el calendario oficial. Si el sistema no encuentra el ano en curso en esta lista, avisa por correo en vez de asumir que no hay feriados."
+}

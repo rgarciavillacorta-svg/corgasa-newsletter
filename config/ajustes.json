@@ -1,29 +1,39 @@
 {
-  "_lee_esto_primero": "Ajustes generales del envio. Si cambias algo aqui, afecta a todas las ediciones futuras.",
+  "_lee_esto_primero": "Ajustes generales del boletin. Si cambias algo aqui, afecta a todas las ediciones futuras.",
+  "_version": "2.0 - integrado con MailFlow",
 
   "remitente": {
     "nombre": "CORGASA",
-    "correo": "comercial@corgasa.pe",
-    "_pendiente": "Ruben debe decidir si conviene separar en boletin@corgasa.pe para proteger la reputacion del correo comercial"
+    "correo": "boletin@corgasa.pe",
+    "_importante": "MailFlow usa una sola variable SENDER_EMAIL para TODOS los envios. Hay que agregarle un remitente por campana antes del primer boletin, para que las secuencias de bienvenida y reactivacion sigan saliendo desde comercial@corgasa.pe.",
+    "_pendiente": "Crear boletin@corgasa.pe y verificarlo en Resend antes del primer envio."
   },
 
   "programacion": {
-    "dia_generacion": 25,
-    "dia_envio": 1,
+    "_como_funciona": "El dia 1 se genera el borrador con el mes anterior COMPLETO (del 1 al ultimo dia). Ruben revisa y aprueba. El envio sale a las 08:00 del siguiente dia habil despues de la aprobacion.",
+    "dia_generacion": 1,
     "hora_peru": "08:00",
-    "cron_generacion": "0 13 25 * *",
-    "cron_envio": "0 13 1 * *",
-    "_nota_cron": "13:00 UTC = 08:00 en Peru. El cron NO distingue sabados, domingos ni feriados: si el dia 1 cae domingo, se envia el domingo.",
-    "retrasar_a_dia_habil": false,
-    "_nota_dia_habil": "Si lo pones en true, el envio se corre al primer dia habil. Por defecto false, tal como pidio Ruben."
+    "cron_generacion": "0 13 1 * *",
+    "_nota_cron": "13:00 UTC = 08:00 en Peru.",
+    "envio": "siguiente_dia_habil_tras_aprobacion",
+    "solo_dias_habiles": true,
+    "_nota_dias_habiles": "Nunca se envia sabado, domingo ni feriado. Ver config/feriados-peru.json",
+    "dias_maximos_de_espera": 10,
+    "_nota_espera": "Si Ruben no aprueba en 10 dias, la edicion se cancela y se avisa. El silencio nunca aprueba."
+  },
+
+  "recoleccion": {
+    "periodo": "mes_anterior_completo",
+    "_nota": "Del dia 1 al ultimo dia del mes anterior. Sin huecos: por eso la generacion se corrio del dia 25 al dia 1."
   },
 
   "envio": {
-    "plataforma": "resend",
-    "tamano_tanda": 200,
-    "_nota_tanda": "Enviar por tandas protege la reputacion del dominio. No subir de 200 sin revisar metricas.",
+    "plataforma": "mailflow",
+    "backend": "https://mailflow-backend-production-b611.up.railway.app",
+    "_por_que_mailflow": "MailFlow ya tiene la lista de contactos, las bajas, la supresion de rebotes y quejas, el pixel de apertura y las metricas. Enviar directo a Resend saltaria las bajas y podriamos escribirle a gente que ya pidio no recibir correos (Ley 29733).",
     "requiere_aprobacion": true,
-    "_nota_aprobacion": "NUNCA cambiar a false. Es el candado que impide que salga un correo sin revisar."
+    "_nota_aprobacion": "NUNCA cambiar a false. Es el candado que impide que salga un correo sin revisar.",
+    "aprobacion_en": "dashboard_mailflow"
   },
 
   "contacto": {

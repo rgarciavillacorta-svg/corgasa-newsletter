@@ -1,0 +1,42 @@
+{
+  "_lee_esto_primero": "Enlaces del bloque de categorias del boletin. Sirven para generar clics y trafico a corgasa.pe sin depender de una oferta.",
+
+  "catalogo_general": {
+    "titulo": "Ver todos los cursos",
+    "url": "https://corgasa.pe/categoria-de-cursos/"
+  },
+
+  "cursos_gratis": {
+    "titulo": "Cursos gratis",
+    "descripcion": "Empieza sin costo y conoce la plataforma",
+    "url": "https://corgasa.pe/categoria-del-curso/cursos-gratis/",
+    "_nota": "Suele ser el enlace de mayor clic del boletin: no hay riesgo en hacer clic. Va DESPUES de la oferta pagada para no canibalizarla."
+  },
+
+  "categorias": [
+    {
+      "nombre": "Seguridad y Salud en el Trabajo",
+      "url": "https://corgasa.pe/categoria-del-curso/seguridad-y-salud-en-el-trabajo/"
+    },
+    {
+      "nombre": "Trabajos de Alto Riesgo",
+      "url": "https://corgasa.pe/categoria-del-curso/trabajos-de-alto-riesgo/"
+    },
+    {
+      "nombre": "Mineria e Hidrocarburos",
+      "url": "https://corgasa.pe/categoria-del-curso/mineria-e-hidrocarburos/"
+    },
+    {
+      "nombre": "Sistemas Integrados de Gestion",
+      "url": "https://corgasa.pe/categoria-del-curso/sistemas-integrados-de-gestion-sig/"
+    },
+    {
+      "nombre": "Medio Ambiente",
+      "url": "https://corgasa.pe/categoria-del-curso/medio-ambiente/"
+    },
+    {
+      "nombre": "Diplomados",
+      "url": "https://corgasa.pe/categoria-del-curso/diplomados/"
+    }
+  ]
+}
